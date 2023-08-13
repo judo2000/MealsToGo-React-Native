@@ -10,7 +10,7 @@ const StarContainer = styled.View`
 
 const FontAwesomeStar = styled(FontAwesome)`
   font-size: 20px;
-  color: gold;
+  color: ${(props) => props.theme.colors.text.gold};
 `;
 
 export const Rating = ({ rating }) => {

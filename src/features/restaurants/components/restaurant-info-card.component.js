@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components/native";
 import { Card } from "react-native-paper";
-//import { SvgXml } from "react-native-svg";
+import { SvgXml } from "react-native-svg";
 import { Rating } from "./rating.component";
-
+import { Text, View, Image } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 //import star from "../../../../assets/star";
+import open from "../../../../assets/open";
 
 /*-----Styled Components-----*/
 const RestaurantCard = styled(Card)`
@@ -32,19 +33,29 @@ const Address = styled.Text`
   font-size: ${(props) => props.theme.fontSizes.caption};
 `;
 
+const Section = styled.View`
+  flex-direction: row;
+  align-items: center;
+`;
+const SectionEnd = styled.View`
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-end;
+`;
+
 /*-----Styled Components-----*/
 
 export const RestaurantInfoCard = ({ restaurant = {} }) => {
   const {
     name = "Some Restaurant",
-    icon,
+    icon = "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
     photos = [
       "https://media.istockphoto.com/id/1457889029/photo/group-of-food-with-high-content-of-dietary-fiber-arranged-side-by-side.jpg?s=1024x1024&w=is&k=20&c=96MkVCuqUWOcMZ7vO5nG41rPufiSWlayTac_nsxXUTw=",
     ],
     address = "100 some random street",
     isOpenNow = true,
     rating = 3.6,
-    isClosedTemporarily,
+    isClosedTemporarily = true,
   } = restaurant;
 
   //const ratingArray = Array.from(new Array(Math.floor(rating)));
@@ -54,8 +65,22 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
       <RestaurantCardCover key={name} source={{ uri: photos[0] }} />
       <Info>
         <Title>{name}</Title>
+        <Section>
+          <Rating rating={rating} />
+          <SectionEnd>
+            <View style={{ paddingLeft: 20 }} />
 
-        <Rating rating={rating} />
+            {isClosedTemporarily ? (
+              <Text variant="label" style={{ color: "red" }}>
+                CLOSED TEMPORARILY
+              </Text>
+            ) : (
+              isOpenNow && <SvgXml xml={open} width={20} height={20} />
+            )}
+            <View style={{ paddingLeft: 8 }} />
+            <Image style={{ width: 15, height: 15 }} source={{ uri: icon }} />
+          </SectionEnd>
+        </Section>
 
         <Address>{address}</Address>
       </Info>
