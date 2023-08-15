@@ -68,17 +68,18 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
         <Section>
           <Rating rating={rating} />
           <SectionEnd>
-            <Spacer variant="left.medium" />
-
-            {isClosedTemporarily ? (
-              <Text variant="label" style={{ color: "red" }}>
-                CLOSED TEMPORARILY
-              </Text>
-            ) : (
-              isOpenNow && <SvgXml xml={open} width={20} height={20} />
-            )}
-            <Spacer variant="left.large" />
-            <Image style={{ width: 15, height: 15 }} source={{ uri: icon }} />
+            <Spacer position="left" size="medium">
+              {isClosedTemporarily ? (
+                <Text variant="label" style={{ color: "red" }}>
+                  CLOSED TEMPORARILY
+                </Text>
+              ) : (
+                isOpenNow && <SvgXml xml={open} width={20} height={20} />
+              )}
+            </Spacer>
+            <Spacer position="left" size="large">
+              <Image style={{ width: 15, height: 15 }} source={{ uri: icon }} />
+            </Spacer>
           </SectionEnd>
         </Section>
 
