@@ -9,7 +9,7 @@ const StarContainer = styled.View`
 `;
 
 const FontAwesomeStar = styled(FontAwesome)`
-  font-size: 15px;
+  font-size: ${(props) => props.theme.sizes[1]};
   color: ${(props) => props.theme.colors.text.gold};
 `;
 
