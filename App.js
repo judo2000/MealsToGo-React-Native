@@ -14,6 +14,7 @@ import { useFonts as useLato, Lato_400Regular } from "@expo-google-fonts/lato";
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { Ionicons } from "@expo/vector-icons";
 //const isAndroid = Platform.OS === 'android';
 
 const Settings = () => {
@@ -54,7 +55,26 @@ export default function App() {
     <>
       <ThemeProvider theme={theme}>
         <NavigationContainer>
-          <Tab.Navigator>
+          <Tab.Navigator
+            screenOptions={({ route }) => ({
+              tabBarIcon: ({ focused, color, size }) => {
+                let iconName;
+
+                if (route.name === "Restaurants") {
+                  iconName = focused ? "restaurant" : "restaurant-outline";
+                } else if (route.name === "Settings") {
+                  iconName = focused ? "settings" : "settings-outline";
+                } else if (route.name === "Map") {
+                  iconName = focused ? "map" : "map-outline";
+                }
+
+                // You can return any component that you like here!
+                return <Ionicons name={iconName} size={size} color={color} />;
+              },
+              tabBarActiveTintColor: "tomato",
+              tabBarInactiveTintColor: "gray",
+            })}
+          >
             <Tab.Screen name="Restaurants" component={RestaurantsScreen} />
             <Tab.Screen name="Settings" component={Settings} />
             <Tab.Screen name="Map" component={Map} />
