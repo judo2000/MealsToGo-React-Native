@@ -61,11 +61,13 @@ export default function App() {
                 let iconName;
 
                 if (route.name === "Restaurants") {
-                  iconName = focused ? "restaurant" : "restaurant-outline";
+                  iconName = focused
+                    ? "md-restaurant"
+                    : "md-restaurant-outline";
                 } else if (route.name === "Settings") {
-                  iconName = focused ? "settings" : "settings-outline";
+                  iconName = focused ? "md-settings" : "md-settings-outline";
                 } else if (route.name === "Map") {
-                  iconName = focused ? "map" : "map-outline";
+                  iconName = focused ? "md-map" : "md-map-outline";
                 }
 
                 // You can return any component that you like here!
@@ -76,8 +78,8 @@ export default function App() {
             })}
           >
             <Tab.Screen name="Restaurants" component={RestaurantsScreen} />
-            <Tab.Screen name="Settings" component={Settings} />
             <Tab.Screen name="Map" component={Map} />
+            <Tab.Screen name="Settings" component={Settings} />
           </Tab.Navigator>
         </NavigationContainer>
       </ThemeProvider>
