@@ -13,16 +13,13 @@ export const restaurantsRequest = async (
   });
 };
 
-const restaurantsTransform = (result) => {
-  const newResult = camelize(result);
-  return newResult;
-};
-
-restaurantsRequest()
-  .then(restaurantsTransform)
-  .then((transformedResponse) => {
-    console.log(transformedResponse);
-  })
-  .catch((err) => {
-    console.log(err);
+export const restaurantsTransform = ({ results = [] }) => {
+  const restaurantsTransform = results.map((restaurant) => {
+    return {
+      ...restaurant,
+      isOpenNow: restaurant.opening_hours && restaurant.open_now,
+      isClosedTemporarily: restaurant.business_status === "CLOSED_TEMPORARILY",
+    };
   });
+  return camelize(restaurantsTransform);
+};
