@@ -17,6 +17,8 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Ionicons } from "@expo/vector-icons";
 //const isAndroid = Platform.OS === 'android';
 
+import { restaurantsRequest } from "./src/services/restaurants/mock/restaurants.service";
+
 const Settings = () => {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>

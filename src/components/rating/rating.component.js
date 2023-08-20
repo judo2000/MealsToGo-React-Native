@@ -14,7 +14,6 @@ const FontAwesomeStar = styled(FontAwesome)`
 `;
 
 export const Rating = ({ rating }) => {
-  console.log("rating", rating);
   return (
     <StarContainer>
       <FontAwesomeStar
