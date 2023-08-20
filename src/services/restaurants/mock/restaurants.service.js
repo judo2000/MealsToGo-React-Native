@@ -1,4 +1,4 @@
-import { mocks } from "./index.js";
+import { mockImages, mocks } from "./index.js";
 import camelize from "camelize";
 
 export const restaurantsRequest = async (
@@ -15,6 +15,9 @@ export const restaurantsRequest = async (
 
 export const restaurantsTransform = ({ results = [] }) => {
   const restaurantsTransform = results.map((restaurant) => {
+    restaurant.photos = restaurant.photos.map((p) => {
+      return mockImages[Math.ceil(Math.random() * mockImages.length)];
+    });
     return {
       ...restaurant,
       isOpenNow: restaurant.opening_hours && restaurant.open_now,
