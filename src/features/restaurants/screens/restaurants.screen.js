@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Searchbar } from "react-native-paper";
 import { FlatList, View } from "react-native";
 import styled from "styled-components/native";
 
@@ -9,9 +8,7 @@ import { Spacer } from "../../../components/spacer/spacer.component";
 import { ActivityIndicator, MD2Colors } from "react-native-paper";
 
 import { RestaurantsContext } from "../../../services/restaurants/mock/restaurants.context";
-const SearchContainer = styled.View`
-  padding: ${(props) => props.theme.space[3]};
-`;
+import { Search } from "../components/search.component";
 
 const RestaurantList = styled(FlatList).attrs({
   contentContainerStyle: {
@@ -38,10 +35,8 @@ export const RestaurantsScreen = () => {
           <Loading size={50} animating={true} color={MD2Colors.blue800} />
         )}
       </LoadingContsiner>
-      <SearchContainer>
-        <Searchbar />
-      </SearchContainer>
 
+      <Search />
       <RestaurantList
         data={restaurants}
         renderItem={({ item }) => {
