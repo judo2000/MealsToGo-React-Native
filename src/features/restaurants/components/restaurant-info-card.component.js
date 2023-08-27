@@ -24,7 +24,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
     photos = [
       "https://media.istockphoto.com/id/1457889029/photo/group-of-food-with-high-content-of-dietary-fiber-arranged-side-by-side.jpg?s=1024x1024&w=is&k=20&c=96MkVCuqUWOcMZ7vO5nG41rPufiSWlayTac_nsxXUTw=",
     ],
-    address = "100 some random street",
+    address = restaurant.address,
     isOpenNow = true,
     rating = 3.6,
     isClosedTemporarily = true,
