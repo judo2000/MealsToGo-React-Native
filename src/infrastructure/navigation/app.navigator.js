@@ -11,7 +11,7 @@ import { RestaurantsNavigator } from "./restaurants.navigator";
 const Tab = createBottomTabNavigator();
 
 const TAB_ICON = {
-  Restaurants: {
+  Restaurant: {
     focused: "restaurant",
     outlined: "restaurant-outline",
   },
@@ -60,7 +60,7 @@ export const AppNavigator = () => (
       //   inactiveTintColor: "gray",
       // }}
     >
-      <Tab.Screen name="Restaurants" component={RestaurantsNavigator} />
+      <Tab.Screen name="Restaurant" component={RestaurantsNavigator} />
       <Tab.Screen name="Map" component={Map} />
       <Tab.Screen name="Settings" component={Settings} />
     </Tab.Navigator>
