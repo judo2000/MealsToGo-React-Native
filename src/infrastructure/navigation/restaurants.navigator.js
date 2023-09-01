@@ -1,7 +1,10 @@
 import React from "react";
 import { Text } from "react-native";
 
-import { createStackNavigator } from "@react-navigation/stack";
+import {
+  createStackNavigator,
+  TransitionPresets,
+} from "@react-navigation/stack";
 
 import { RestaurantsScreen } from "../../features/restaurants/screens/restaurants.screen";
 
@@ -13,7 +16,12 @@ const createScreenOptions = () => {
 };
 export const RestaurantsNavigator = () => {
   return (
-    <RestaurantStack.Navigator screenOptions={{ headerShown: false }}>
+    <RestaurantStack.Navigator
+      screenOptions={{
+        ...TransitionPresets.ModalPresentationIOS,
+        headerShown: false,
+      }}
+    >
       <RestaurantStack.Screen
         name="Restaurants"
         component={RestaurantsScreen}
