@@ -26,8 +26,9 @@ const Item = styled.View`
 `;
 
 const isAndroid = Platform.OS === "android";
-export const RestaurantToolTipInfo = ({ restaurant }) => {
-  const Image = isAndroid ? ToolTipWebView : ToolTipImage;
+
+export const RestaurantToolTipInfo = ({ restaurant, isMap }) => {
+  const Image = isAndroid && isMap ? ToolTipWebView : ToolTipImage;
   return (
     <Item>
       <Image source={{ uri: restaurant.photos[0] }} />
