@@ -8,6 +8,19 @@ import { SafeArea } from "../../components/utility/safe-area.component";
 
 import { RestaurantsNavigator } from "./restaurants.navigator";
 import { MapScreen } from "../../features/map/screens/map.screen";
+
+//********************/
+// found this as a solution to stop
+//  Sending `onAnimatedValueUpdate` with no listeners registered.
+// when going to the RestaurantDetail screen
+import { Animated } from "react-native";
+
+const av = new Animated.Value(0);
+av.addListener(() => {
+  return;
+});
+//****************/
+
 const Tab = createBottomTabNavigator();
 
 const TAB_ICON = {

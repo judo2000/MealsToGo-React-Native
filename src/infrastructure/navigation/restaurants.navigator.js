@@ -1,5 +1,4 @@
 import React from "react";
-import { Text } from "react-native";
 
 import {
   createStackNavigator,
@@ -10,11 +9,7 @@ import { RestaurantsScreen } from "../../features/restaurants/screens/restaurant
 import { RestaurantDetailScreen } from "../../features/restaurants/screens/restaurant-detail.screen";
 
 const RestaurantStack = createStackNavigator();
-const createScreenOptions = () => {
-  return {
-    headerShown: false,
-  };
-};
+
 export const RestaurantsNavigator = () => {
   return (
     <RestaurantStack.Navigator
