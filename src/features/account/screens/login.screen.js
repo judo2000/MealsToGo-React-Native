@@ -6,6 +6,7 @@ import {
   AuthButton,
   AuthInput,
   ErrorContainer,
+  Title,
   // ErrorContainer,
   // Title,
 } from "../components/account.styles";
@@ -13,7 +14,7 @@ import { Spacer } from "../../../components/spacer/spacer.component";
 import { Text } from "../../../components/typography/text.component";
 import { AuthenticationContext } from "../../../services/authentication/authentication.context";
 
-export const LoginScreen = () => {
+export const LoginScreen = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { onLogin, error } = useContext(AuthenticationContext);
@@ -21,6 +22,7 @@ export const LoginScreen = () => {
   return (
     <AccountBackground>
       <AccountCover />
+      <Title>Meals to Go</Title>
       <AccountContainer>
         <AuthInput
           label="E-mail"
@@ -44,18 +46,22 @@ export const LoginScreen = () => {
         {error && (
           <ErrorContainer size="large">
             <Text variant="error">
+              Error:{" "}
               {error === "FirebaseError: Firebase: Error (auth/invalid-email)."
                 ? "Please enter your email address"
                 : error ===
                   "FirebaseError: Firebase: Error (auth/invalid-email)."
                 ? "Please enter a email address"
                 : error ===
+                  "FirebaseError: Firebase: Error (auth/missing-password)."
+                ? "Please enter your password"
+                : error ===
                   "FirebaseError: Firebase: Error (auth/wrong-password)."
-                ? "Invalid Credentials"
+                ? "Please check email and password and try again."
                 : error ===
                   "FirebaseError: Firebase: Error (auth/user-not-found)."
-                ? "Invalid Credentials"
-                : "Please check email and password and try again."}
+                ? "Please check email and password and try again."
+                : ""}
             </Text>
           </ErrorContainer>
         )}
@@ -69,6 +75,15 @@ export const LoginScreen = () => {
           </AuthButton>
         </Spacer>
       </AccountContainer>
+      <Spacer size="large">
+        <AuthButton
+          icon="lock-open-outline"
+          mode="contained"
+          onPress={() => navigation.goBack()}
+        >
+          Back
+        </AuthButton>
+      </Spacer>
     </AccountBackground>
   );
 };
