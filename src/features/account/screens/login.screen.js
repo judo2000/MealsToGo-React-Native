@@ -7,8 +7,6 @@ import {
   AuthInput,
   ErrorContainer,
   Title,
-  // ErrorContainer,
-  // Title,
 } from "../components/account.styles";
 import { Spacer } from "../../../components/spacer/spacer.component";
 import { Text } from "../../../components/typography/text.component";
@@ -39,7 +37,6 @@ export const LoginScreen = ({ navigation }) => {
             textContentType="password"
             secureTextEntry
             autoCapitalize="none"
-            secure
             onChangeText={(p) => setPassword(p)}
           />
         </Spacer>
@@ -76,11 +73,7 @@ export const LoginScreen = ({ navigation }) => {
         </Spacer>
       </AccountContainer>
       <Spacer size="large">
-        <AuthButton
-          icon="lock-open-outline"
-          mode="contained"
-          onPress={() => navigation.goBack()}
-        >
+        <AuthButton mode="contained" onPress={() => navigation.goBack()}>
           Back
         </AuthButton>
       </Spacer>
