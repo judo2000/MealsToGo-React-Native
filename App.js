@@ -1,5 +1,5 @@
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { ThemeProvider } from "styled-components/native";
 import { initializeApp } from "firebase/app";
 
@@ -16,9 +16,7 @@ import { FavoritesContextProvider } from "./src/services/favorites/favorites.con
 
 import { Navigation } from "./src/infrastructure/navigation";
 import { AuthenticationContextProvider } from "./src/services/authentication/authentication.context";
-//const isAndroid = Platform.OS === 'android';
 
-// Initialize Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyCgL5dkO6z78QSYQSg23wjiQQkqP-4L7sY",
   authDomain: "mealstogo-5be57.firebaseapp.com",

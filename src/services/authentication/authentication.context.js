@@ -13,19 +13,28 @@ export const AuthenticationContext = createContext();
 export const AuthenticationContextProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [user, setUser] = useState(null);
-  const [error, setError] = useState(null);
-  //const auth = useRef(getAuth()).current;
+  const [error, setError] = useState([]);
+  const auth = useRef(getAuth()).current;
 
-  const onLogin = ({ email, password }) => {
+  // onAuthStateChanged(auth, (usr) => {
+  //   if (usr) {
+  //     setUser(usr);
+  //     setIsLoading(false);
+  //   } else {
+  //     setIsLoading(false);
+  //   }
+  // });
+
+  const onLogin = (email, password) => {
     setIsLoading(true);
-    loginRequest(email, password)
+    loginRequest(auth, email, password)
       .then((u) => {
         setUser(u);
         setIsLoading(false);
       })
       .catch((e) => {
         setIsLoading(false);
-        setError(e);
+        setError(e.toString());
       });
   };
 
