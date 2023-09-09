@@ -23,7 +23,6 @@ export const RegisterScreen = ({ navigation }) => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const { onRegister, isLoading, error } = useContext(AuthenticationContext);
 
-  console.log(isLoading);
   return (
     <AccountBackground>
       <AccountCover />

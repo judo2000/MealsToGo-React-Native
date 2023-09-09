@@ -8,6 +8,9 @@ import { SafeArea } from "../../components/utility/safe-area.component";
 import { RestaurantsNavigator } from "./restaurants.navigator";
 import { MapScreen } from "../../features/map/screens/map.screen";
 import { AuthenticationContext } from "../../services/authentication/authentication.context";
+import { FavoritesContextProvider } from "../../services/favorites/favorites.context";
+import { LocationContextProvider } from "../../services/location/location.context";
+import { RestaurantsContextProvider } from "../../services/restaurants/mock/restaurants.context";
 
 //********************/
 // found this as a solution to stop
@@ -65,15 +68,21 @@ const createScreenOptions = ({ route }) => {
 };
 
 export const AppNavigator = () => (
-  <Tab.Navigator
-    screenOptions={createScreenOptions}
-    // tabBarOptions={{
-    //   activeTintColor: "tomato",
-    //   inactiveTintColor: "gray",
-    // }}
-  >
-    <Tab.Screen name="Restaurant" component={RestaurantsNavigator} />
-    <Tab.Screen name="Map" component={MapScreen} />
-    <Tab.Screen name="Settings" component={Settings} />
-  </Tab.Navigator>
+  <FavoritesContextProvider>
+    <LocationContextProvider>
+      <RestaurantsContextProvider>
+        <Tab.Navigator
+          screenOptions={createScreenOptions}
+          // tabBarOptions={{
+          //   activeTintColor: "tomato",
+          //   inactiveTintColor: "gray",
+          // }}
+        >
+          <Tab.Screen name="Restaurant" component={RestaurantsNavigator} />
+          <Tab.Screen name="Map" component={MapScreen} />
+          <Tab.Screen name="Settings" component={Settings} />
+        </Tab.Navigator>
+      </RestaurantsContextProvider>
+    </LocationContextProvider>
+  </FavoritesContextProvider>
 );
