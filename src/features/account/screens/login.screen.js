@@ -6,7 +6,8 @@ import {
   AuthButton,
   AuthInput,
   ErrorContainer,
-  Title,
+  // ErrorContainer,
+  // Title,
 } from "../components/account.styles";
 import { Spacer } from "../../../components/spacer/spacer.component";
 import { Text } from "../../../components/typography/text.component";
@@ -17,7 +18,6 @@ export const LoginScreen = () => {
   const [password, setPassword] = useState("");
   const { onLogin, error } = useContext(AuthenticationContext);
 
-  console.log(error);
   return (
     <AccountBackground>
       <AccountCover />
