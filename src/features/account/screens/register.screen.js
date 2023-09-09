@@ -1,4 +1,7 @@
 import React, { useState, useContext } from "react";
+
+import { ActivityIndicator } from "react-native-paper";
+
 import {
   AccountBackground,
   AccountCover,
@@ -7,20 +10,20 @@ import {
   AuthInput,
   ErrorContainer,
   Title,
-  // ErrorContainer,
-  // Title,
 } from "../components/account.styles";
 import { Spacer } from "../../../components/spacer/spacer.component";
 import { Text } from "../../../components/typography/text.component";
 import { AuthenticationContext } from "../../../services/authentication/authentication.context";
 
+import { colors } from "../../../infrastructure/theme/colors";
+
 export const RegisterScreen = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const { onRegister, error } = useContext(AuthenticationContext);
+  const { onRegister, isLoading, error } = useContext(AuthenticationContext);
 
-  console.log(error);
+  console.log(isLoading);
   return (
     <AccountBackground>
       <AccountCover />
@@ -69,13 +72,17 @@ export const RegisterScreen = ({ navigation }) => {
           </ErrorContainer>
         )}
         <Spacer size="large">
-          <AuthButton
-            icon="email"
-            mode="contained"
-            onPress={() => onRegister(email, password, confirmPassword)}
-          >
-            Register
-          </AuthButton>
+          {!isLoading ? (
+            <AuthButton
+              icon="email"
+              mode="contained"
+              onPress={() => onRegister(email, password, confirmPassword)}
+            >
+              Register
+            </AuthButton>
+          ) : (
+            <ActivityIndicator animating={true} color={colors.brand.primary} />
+          )}
         </Spacer>
       </AccountContainer>
       <Spacer size="large">

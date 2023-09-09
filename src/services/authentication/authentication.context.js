@@ -1,5 +1,6 @@
 import React, { useState, createContext, useRef } from "react";
 import {
+  signOut,
   createUserWithEmailAndPassword,
   onAuthStateChanged,
   getAuth,
@@ -37,10 +38,10 @@ export const AuthenticationContextProvider = ({ children }) => {
       });
   };
 
-  const onRegister = (email, password, confirmPassword) => {
+  const onRegister = (email, password, repeatedPassword) => {
     setIsLoading(true);
-    if (password !== confirmPassword) {
-      setError("Passwords do not match");
+    if (password !== repeatedPassword) {
+      setError("Error: Passwords do not match");
       return;
     }
     createUserWithEmailAndPassword(auth, email, password)
@@ -54,6 +55,13 @@ export const AuthenticationContextProvider = ({ children }) => {
       });
   };
 
+  const onLogout = () => {
+    signOut(auth).then(() => {
+      setUser(null);
+      setError(null);
+    });
+  };
+
   return (
     <AuthenticationContext.Provider
       value={{
@@ -63,6 +71,7 @@ export const AuthenticationContextProvider = ({ children }) => {
         error,
         onLogin,
         onRegister,
+        onLogout,
       }}
     >
       {children}
