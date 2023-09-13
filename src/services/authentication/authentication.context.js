@@ -1,4 +1,4 @@
-import React, { useState, createContext, useRef } from "react";
+import React, { useState, createContext, useRef, useEffect } from "react";
 import {
   signOut,
   createUserWithEmailAndPassword,
@@ -16,14 +16,19 @@ export const AuthenticationContextProvider = ({ children }) => {
   const [error, setError] = useState(null);
   const auth = useRef(getAuth()).current;
 
-  onAuthStateChanged(auth, (usr) => {
-    if (usr) {
-      setUser(usr);
-      setIsLoading(false);
-    } else {
-      setIsLoading(false);
-    }
-  });
+  useEffect(() => {
+    const unsubscribe = () => {
+      onAuthStateChanged(auth, (user) => {
+        if (user) {
+          setUser(user);
+        } else {
+          setUser(null);
+        }
+        setIsLoading(false);
+      });
+    };
+    unsubscribe();
+  }, []);
 
   const onLogin = (email, password) => {
     setIsLoading(true);
@@ -38,9 +43,9 @@ export const AuthenticationContextProvider = ({ children }) => {
       });
   };
 
-  const onRegister = (email, password, repeatedPassword) => {
+  const onRegister = (email, password, confirmPassword) => {
     setIsLoading(true);
-    if (password !== repeatedPassword) {
+    if (password !== confirmPassword) {
       setError("Error: Passwords do not match");
       return;
     }

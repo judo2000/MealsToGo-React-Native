@@ -8,7 +8,7 @@ import { AuthenticationContext } from "../../services/authentication/authenticat
 
 export const Navigation = () => {
   const { isAuthenticated } = useContext(AuthenticationContext);
-
+  console.log("Is Authenticated", isAuthenticated);
   return (
     <NavigationContainer>
       {isAuthenticated ? <AppNavigator /> : <AccountNavigator />}
