@@ -30,12 +30,12 @@ export const SettingsScreen = ({ navigation }) => {
       <List.Section>
         <SettingsItem
           title="Favorites"
-          left={(props) => <List.Icon {...props} color="block" icon="heart" />}
+          left={(props) => <List.Icon {...props} color="black" icon="heart" />}
           onPress={() => navigation.navigate("Favorites")}
         />
         <SettingsItem
           title="Logout"
-          left={(props) => <List.Icon {...props} color="block" icon="door" />}
+          left={(props) => <List.Icon {...props} color="black" icon="door" />}
           onPress={onLogout}
         />
       </List.Section>
