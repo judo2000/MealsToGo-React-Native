@@ -1,15 +1,10 @@
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
-import React, { useEffect } from "react";
+import React from "react";
 import { ThemeProvider } from "styled-components/native";
 import { initializeApp } from "firebase/app";
 import { initializeAuth } from "firebase/auth";
-import { getReactNativePersistence } from "firebase/auth/react-native";
-import {
-  getAuth,
-  onAuthStateChanged,
-  createUserWithEmailAndPassword,
-  signOut,
-} from "firebase/auth";
+import { getReactNativePersistence } from "firebase/auth";
+
 import { theme } from "./src/infrastructure/theme";
 import {
   useFonts as useOswald,
