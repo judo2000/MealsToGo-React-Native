@@ -8,7 +8,7 @@ import { MapScreen } from "../../features/map/screens/map.screen";
 
 import { FavoritesContextProvider } from "../../services/favorites/favorites.context";
 import { LocationContextProvider } from "../../services/location/location.context";
-import { RestaurantsContextProvider } from "../../services/restaurants/mock/restaurants.context";
+import { RestaurantsContextProvider } from "../../services/restaurants/restaurants.context";
 
 //********************/
 // found this as a solution to stop
