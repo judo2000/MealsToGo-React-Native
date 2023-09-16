@@ -1,0 +1,427 @@
+[debug] [2023-09-16T16:31:54.640Z] ----------------------------------------------------------------------
+[debug] [2023-09-16T16:31:54.642Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\judo2\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2023-09-16T16:31:54.643Z] CLI Version:   12.5.4
+[debug] [2023-09-16T16:31:54.643Z] Platform:      win32
+[debug] [2023-09-16T16:31:54.643Z] Node Version:  v18.17.0
+[debug] [2023-09-16T16:31:54.645Z] Time:          Sat Sep 16 2023 10:31:54 GMT-0600 (Mountain Daylight Time)
+[debug] [2023-09-16T16:31:54.645Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-16T16:31:54.772Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-16T16:31:54.773Z] > authorizing via signed-in user (stephensmoore2000@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-09-16T16:31:54.784Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-09-16T16:31:54.785Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-09-16T16:31:54.800Z] [hub] writing locator at C:\Users\judo2\AppData\Local\Temp\hub-mealstogo-5be57.json
+[debug] [2023-09-16T16:31:54.819Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-09-16T16:31:54.819Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-09-16T16:31:54.819Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2023-09-16T16:31:54.822Z] defaultcredentials: writing to file C:\Users\judo2\AppData\Roaming\firebase\stephensmoore2000_gmail_com_application_default_credentials.json
+[debug] [2023-09-16T16:31:54.825Z] Setting GAC to C:\Users\judo2\AppData\Roaming\firebase\stephensmoore2000_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\judo2\\AppData\\Roaming\\firebase\\stephensmoore2000_gmail_com_application_default_credentials.json"}}
+[debug] [2023-09-16T16:31:54.827Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-5be57/adminSdkConfig [none]
+[debug] [2023-09-16T16:31:55.020Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-5be57/adminSdkConfig 200
+[debug] [2023-09-16T16:31:55.020Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-5be57/adminSdkConfig {"projectId":"mealstogo-5be57","storageBucket":"mealstogo-5be57.appspot.com"}
+[info] i  ui: downloading ui-v1.11.7.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.11.7.zip..."}}
+[debug] [2023-09-16T16:31:55.039Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip 
+[debug] [2023-09-16T16:31:55.189Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip 200
+[debug] [2023-09-16T16:31:55.190Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip [stream]
+[debug] [2023-09-16T16:31:55.419Z] Data is 3064105
+[debug] [2023-09-16T16:31:55.419Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-09-16T16:31:55.419Z] [unzip] Processing entry: client\
+[debug] [2023-09-16T16:31:55.419Z] [unzip] mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\
+[debug] [2023-09-16T16:31:55.420Z] [unzip] Entry: client/favicon.ico (compressed_size=2497 bytes, uncompressed_size=7406 bytes)
+[debug] [2023-09-16T16:31:55.420Z] [unzip] Processing entry: client\favicon.ico
+[debug] [2023-09-16T16:31:55.420Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-16T16:31:55.421Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\favicon.ico
+[debug] [2023-09-16T16:31:55.423Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=7231 bytes, uncompressed_size=7367 bytes)
+[debug] [2023-09-16T16:31:55.423Z] [unzip] Processing entry: client\apple-touch-icon.png
+[debug] [2023-09-16T16:31:55.423Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-16T16:31:55.424Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\apple-touch-icon.png
+[debug] [2023-09-16T16:31:55.425Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=16987 bytes, uncompressed_size=18186 bytes)
+[debug] [2023-09-16T16:31:55.425Z] [unzip] Processing entry: client\android-chrome-512x512.png
+[debug] [2023-09-16T16:31:55.425Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-16T16:31:55.425Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\android-chrome-512x512.png
+[debug] [2023-09-16T16:31:55.426Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-09-16T16:31:55.426Z] [unzip] Processing entry: client\assets\
+[debug] [2023-09-16T16:31:55.426Z] [unzip] mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\
+[debug] [2023-09-16T16:31:55.429Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-09-16T16:31:55.429Z] [unzip] Processing entry: client\assets\extensions\
+[debug] [2023-09-16T16:31:55.429Z] [unzip] mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions\
+[debug] [2023-09-16T16:31:55.429Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2023-09-16T16:31:55.429Z] [unzip] Processing entry: client\assets\extensions\default-extension.png
+[debug] [2023-09-16T16:31:55.429Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions
+[debug] [2023-09-16T16:31:55.429Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions\default-extension.png
+[debug] [2023-09-16T16:31:55.430Z] [unzip] Entry: client/assets/index.58ca09f7.css (compressed_size=37601 bytes, uncompressed_size=321252 bytes)
+[debug] [2023-09-16T16:31:55.431Z] [unzip] Processing entry: client\assets\index.58ca09f7.css
+[debug] [2023-09-16T16:31:55.431Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2023-09-16T16:31:55.431Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.58ca09f7.css
+[debug] [2023-09-16T16:31:55.435Z] [unzip] Entry: client/assets/index.c2583d42.js (compressed_size=526232 bytes, uncompressed_size=1860152 bytes)
+[debug] [2023-09-16T16:31:55.435Z] [unzip] Processing entry: client\assets\index.c2583d42.js
+[debug] [2023-09-16T16:31:55.435Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2023-09-16T16:31:55.435Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.c2583d42.js
+[debug] [2023-09-16T16:31:55.445Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-09-16T16:31:55.445Z] [unzip] Processing entry: client\assets\provider-icons\
+[debug] [2023-09-16T16:31:55.445Z] [unzip] mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\
+[debug] [2023-09-16T16:31:55.446Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2023-09-16T16:31:55.446Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2023-09-16T16:31:55.446Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-16T16:31:55.447Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2023-09-16T16:31:55.448Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2023-09-16T16:31:55.448Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2023-09-16T16:31:55.448Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-16T16:31:55.449Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2023-09-16T16:31:55.449Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2023-09-16T16:31:55.449Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_phone.svg
+[debug] [2023-09-16T16:31:55.449Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-16T16:31:55.450Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_phone.svg
+[debug] [2023-09-16T16:31:55.450Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2023-09-16T16:31:55.451Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_saml.svg
+[debug] [2023-09-16T16:31:55.451Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-16T16:31:55.451Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_saml.svg
+[debug] [2023-09-16T16:31:55.451Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2023-09-16T16:31:55.451Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2023-09-16T16:31:55.451Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-16T16:31:55.452Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2023-09-16T16:31:55.452Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2023-09-16T16:31:55.452Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2023-09-16T16:31:55.452Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-16T16:31:55.453Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2023-09-16T16:31:55.453Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2023-09-16T16:31:55.453Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2023-09-16T16:31:55.453Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-16T16:31:55.454Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2023-09-16T16:31:55.454Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2023-09-16T16:31:55.454Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_github.svg
+[debug] [2023-09-16T16:31:55.454Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-16T16:31:55.454Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_github.svg
+[debug] [2023-09-16T16:31:55.455Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2023-09-16T16:31:55.455Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_apple.svg
+[debug] [2023-09-16T16:31:55.455Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-16T16:31:55.455Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_apple.svg
+[debug] [2023-09-16T16:31:55.456Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2023-09-16T16:31:55.456Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_google.svg
+[debug] [2023-09-16T16:31:55.456Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-16T16:31:55.456Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_google.svg
+[debug] [2023-09-16T16:31:55.456Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2023-09-16T16:31:55.456Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_email.svg
+[debug] [2023-09-16T16:31:55.457Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-16T16:31:55.457Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_email.svg
+[debug] [2023-09-16T16:31:55.457Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2023-09-16T16:31:55.457Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2023-09-16T16:31:55.457Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-16T16:31:55.457Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2023-09-16T16:31:55.458Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2023-09-16T16:31:55.458Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2023-09-16T16:31:55.458Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-09-16T16:31:55.458Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2023-09-16T16:31:55.459Z] [unzip] Entry: client/assets/index.c2583d42.js.map (compressed_size=1778557 bytes, uncompressed_size=7961927 bytes)
+[debug] [2023-09-16T16:31:55.459Z] [unzip] Processing entry: client\assets\index.c2583d42.js.map
+[debug] [2023-09-16T16:31:55.459Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2023-09-16T16:31:55.459Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.c2583d42.js.map
+[debug] [2023-09-16T16:31:55.489Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-09-16T16:31:55.489Z] [unzip] Processing entry: client\assets\img\
+[debug] [2023-09-16T16:31:55.489Z] [unzip] mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\img\
+[debug] [2023-09-16T16:31:55.490Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2023-09-16T16:31:55.490Z] [unzip] Processing entry: client\assets\img\database.png
+[debug] [2023-09-16T16:31:55.490Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\img
+[debug] [2023-09-16T16:31:55.490Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\assets\img\database.png
+[debug] [2023-09-16T16:31:55.491Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=838 bytes, uncompressed_size=1504 bytes)
+[debug] [2023-09-16T16:31:55.491Z] [unzip] Processing entry: client\safari-pinned-tab.svg
+[debug] [2023-09-16T16:31:55.491Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-16T16:31:55.491Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\safari-pinned-tab.svg
+[debug] [2023-09-16T16:31:55.491Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=5406 bytes, uncompressed_size=5723 bytes)
+[debug] [2023-09-16T16:31:55.491Z] [unzip] Processing entry: client\mstile-150x150.png
+[debug] [2023-09-16T16:31:55.491Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-16T16:31:55.492Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\mstile-150x150.png
+[debug] [2023-09-16T16:31:55.492Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2023-09-16T16:31:55.492Z] [unzip] Processing entry: client\browserconfig.xml
+[debug] [2023-09-16T16:31:55.492Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-16T16:31:55.493Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\browserconfig.xml
+[debug] [2023-09-16T16:31:55.493Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2023-09-16T16:31:55.493Z] [unzip] Processing entry: client\robots.txt
+[debug] [2023-09-16T16:31:55.493Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-16T16:31:55.493Z] [unzip] Writing file: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\robots.txt
+[debug] [2023-09-16T16:31:55.494Z] [unzip] Entry: client/index.html (compressed_size=1363 bytes, uncompressed_size=3064 bytes)
+[debug] [2023-09-16T16:31:55.494Z] [unzip] Processing entry: client\index.html
+[debug] [2023-09-16T16:31:55.494Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-16T16:31:55.494Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\index.html
+[debug] [2023-09-16T16:31:55.495Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=757 bytes, uncompressed_size=777 bytes)
+[debug] [2023-09-16T16:31:55.495Z] [unzip] Processing entry: client\favicon-16x16.png
+[debug] [2023-09-16T16:31:55.495Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-16T16:31:55.495Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\favicon-16x16.png
+[debug] [2023-09-16T16:31:55.496Z] [unzip] Entry: client/manifest.json (compressed_size=246 bytes, uncompressed_size=551 bytes)
+[debug] [2023-09-16T16:31:55.496Z] [unzip] Processing entry: client\manifest.json
+[debug] [2023-09-16T16:31:55.496Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-16T16:31:55.496Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\manifest.json
+[debug] [2023-09-16T16:31:55.496Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=1175 bytes, uncompressed_size=1175 bytes)
+[debug] [2023-09-16T16:31:55.496Z] [unzip] Processing entry: client\favicon-32x32.png
+[debug] [2023-09-16T16:31:55.496Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-16T16:31:55.497Z] [unzip] Writing file: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\favicon-32x32.png
+[debug] [2023-09-16T16:31:55.497Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=7602 bytes, uncompressed_size=7834 bytes)
+[debug] [2023-09-16T16:31:55.497Z] [unzip] Processing entry: client\android-chrome-192x192.png
+[debug] [2023-09-16T16:31:55.497Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-09-16T16:31:55.497Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\client\android-chrome-192x192.png
+[debug] [2023-09-16T16:31:55.498Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-09-16T16:31:55.498Z] [unzip] Processing entry: server\
+[debug] [2023-09-16T16:31:55.498Z] [unzip] mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\server\
+[debug] [2023-09-16T16:31:55.498Z] [unzip] Entry: server/server.js (compressed_size=343746 bytes, uncompressed_size=1346374 bytes)
+[debug] [2023-09-16T16:31:55.498Z] [unzip] Processing entry: server\server.js
+[debug] [2023-09-16T16:31:55.498Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\server
+[debug] [2023-09-16T16:31:55.498Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\server\server.js
+[debug] [2023-09-16T16:31:55.503Z] [unzip] Entry: server/server.js.map (compressed_size=289157 bytes, uncompressed_size=1325651 bytes)
+[debug] [2023-09-16T16:31:55.503Z] [unzip] Processing entry: server\server.js.map
+[debug] [2023-09-16T16:31:55.503Z] [unzip] else mkdir: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\server
+[debug] [2023-09-16T16:31:55.503Z] [unzip] deflating: C:\Users\judo2\.cache\firebase\emulators\ui-v1.11.7\server\server.js.map
+[debug] [2023-09-16T16:31:55.509Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-09-16T16:31:55.509Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-09-16T16:31:55.509Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\judo2\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\judo2\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-09-16T16:31:56.303Z] Web / API server started at 127.0.0.1:4000
+Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\nWeb / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\judo2\Documents\dev\udemy\react_native\ZTM\MealsToGo\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\judo2\\Documents\\dev\\udemy\\react_native\\ZTM\\MealsToGo\\functions\" for Cloud Functions..."}}
+[debug] [2023-09-16T16:31:56.466Z] Validating nodejs source
+[debug] [2023-09-16T16:31:58.888Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-09-16T16:31:58.888Z] Building nodejs source
+[debug] [2023-09-16T16:31:58.889Z] Failed to find version of module node: reached end of search path C:\Users\judo2\Documents\dev\udemy\react_native\ZTM\MealsToGo\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-09-16T16:31:58.891Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-09-16T16:31:58.898Z] Found firebase-functions binary at 'C:\Users\judo2\Documents\dev\udemy\react_native\ZTM\MealsToGo\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8041
+
+[debug] [2023-09-16T16:32:00.097Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-09-16T16:32:49.046Z] File C:\Users\judo2\Documents\dev\udemy\react_native\ZTM\MealsToGo\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\judo2\\Documents\\dev\\udemy\\react_native\\ZTM\\MealsToGo\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-09-16T16:32:50.061Z] Validating nodejs source
+[debug] [2023-09-16T16:32:52.932Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-09-16T16:32:52.932Z] Building nodejs source
+[debug] [2023-09-16T16:32:52.932Z] Failed to find version of module node: reached end of search path C:\Users\judo2\Documents\dev\udemy\react_native\ZTM\MealsToGo\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-09-16T16:32:52.933Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-09-16T16:32:52.939Z] Found firebase-functions binary at 'C:\Users\judo2\Documents\dev\udemy\react_native\ZTM\MealsToGo\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8599
+
+[debug] [2023-09-16T16:32:54.004Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[info] +  functions[us-central1-helloWorld]: http function initialized (http://127.0.0.1:5001/mealstogo-5be57/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/mealstogo-5be57/us-central1/helloWorld)."}}
+[debug] [2023-09-16T16:33:52.883Z] [work-queue] {"queuedWork":["/mealstogo-5be57/us-central1/helloWorld-2023-09-16T16:33:52.882Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-09-16T16:33:52.884Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/mealstogo-5be57/us-central1/helloWorld-2023-09-16T16:33:52.882Z"],"workRunningCount":1}
+[debug] [2023-09-16T16:33:52.884Z] Accepted request GET /mealstogo-5be57/us-central1/helloWorld --> us-central1-helloWorld
+[debug] [2023-09-16T16:33:52.889Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-09-16T16:33:52.889Z] [functions] Got req.url=/mealstogo-5be57/us-central1/helloWorld, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-5be57/us-central1/helloWorld, mapping to path=/"}}
+[debug] [2023-09-16T16:33:53.541Z] [worker-pool] addWorker(us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-helloWorld)"}}
+[debug] [2023-09-16T16:33:53.542Z] [worker-pool] Adding worker with key us-central1-helloWorld, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-helloWorld, total=1"}}
+[debug] [2023-09-16T16:33:54.458Z] [runtime-status] [16012] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.10.1","resolution":"C:\\Users\\judo2\\Documents\\dev\\udemy\\react_native\\ZTM\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16012] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"C:\\\\Users\\\\judo2\\\\Documents\\\\dev\\\\udemy\\\\react_native\\\\ZTM\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-09-16T16:33:54.458Z] [runtime-status] [16012] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\judo2\\Documents\\dev\\udemy\\react_native\\ZTM\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16012] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\judo2\\\\Documents\\\\dev\\\\udemy\\\\react_native\\\\ZTM\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-09-16T16:33:54.459Z] [runtime-status] [16012] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16012] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-09-16T16:33:54.459Z] [runtime-status] [16012] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\judo2\\Documents\\dev\\udemy\\react_native\\ZTM\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16012] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\judo2\\\\Documents\\\\dev\\\\udemy\\\\react_native\\\\ZTM\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-09-16T16:33:54.652Z] [runtime-status] [16012] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16012] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-09-16T16:33:54.652Z] [runtime-status] [16012] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\judo2\\Documents\\dev\\udemy\\react_native\\ZTM\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16012] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\judo2\\\\Documents\\\\dev\\\\udemy\\\\react_native\\\\ZTM\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2023-09-16T16:33:54.652Z] [runtime-status] [16012] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\judo2\\Documents\\dev\\udemy\\react_native\\ZTM\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16012] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\judo2\\\\Documents\\\\dev\\\\udemy\\\\react_native\\\\ZTM\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-09-16T16:33:54.654Z] [runtime-status] [16012] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.10.1","resolution":"C:\\Users\\judo2\\Documents\\dev\\udemy\\react_native\\ZTM\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16012] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"C:\\\\Users\\\\judo2\\\\Documents\\\\dev\\\\udemy\\\\react_native\\\\ZTM\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-09-16T16:33:54.656Z] [runtime-status] [16012] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\judo2\\Documents\\dev\\udemy\\react_native\\ZTM\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16012] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\judo2\\\\Documents\\\\dev\\\\udemy\\\\react_native\\\\ZTM\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-09-16T16:33:54.656Z] [runtime-status] [16012] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.10.1","resolution":"C:\\Users\\judo2\\Documents\\dev\\udemy\\react_native\\ZTM\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16012] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"C:\\\\Users\\\\judo2\\\\Documents\\\\dev\\\\udemy\\\\react_native\\\\ZTM\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-09-16T16:33:54.671Z] [runtime-status] [16012] Functions runtime initialized. {"cwd":"C:\\Users\\judo2\\Documents\\dev\\udemy\\react_native\\ZTM\\MealsToGo\\functions","node_version":"18.17.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16012] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\judo2\\\\Documents\\\\dev\\\\udemy\\\\react_native\\\\ZTM\\\\MealsToGo\\\\functions\",\"node_version\":\"18.17.0\"}"}}
+[debug] [2023-09-16T16:33:54.671Z] [runtime-status] [16012] Listening to port: \\?\pipe\fire_emu_78e174ca47041cd9 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16012] Listening to port: \\\\?\\pipe\\fire_emu_78e174ca47041cd9"}}
+[debug] [2023-09-16T16:33:54.753Z] [worker-us-central1-helloWorld-e906b617-3d9b-46bb-ab8e-0b5c52d6f315]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-e906b617-3d9b-46bb-ab8e-0b5c52d6f315]: IDLE"}}
+[debug] [2023-09-16T16:33:54.753Z] [worker-pool] submitRequest(triggerId=us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-helloWorld)"}}
+[info] i  functions: Beginning execution of "us-central1-helloWorld" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Beginning execution of \"us-central1-helloWorld\""}}
+[debug] [2023-09-16T16:33:54.754Z] [worker-us-central1-helloWorld-e906b617-3d9b-46bb-ab8e-0b5c52d6f315]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-e906b617-3d9b-46bb-ab8e-0b5c52d6f315]: BUSY"}}
+[info] >  {"structuredData":true,"severity":"INFO","message":"Hello logs!"} {"user":{"structuredData":true,"severity":"INFO","message":"Hello logs!"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"structuredData\":true,\"severity\":\"INFO\",\"message\":\"Hello logs!\"}"}}
+[debug] [2023-09-16T16:33:54.761Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-helloWorld" in 6.777ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finished \"us-central1-helloWorld\" in 6.777ms"}}
+[debug] [2023-09-16T16:33:54.762Z] [worker-us-central1-helloWorld-e906b617-3d9b-46bb-ab8e-0b5c52d6f315]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-e906b617-3d9b-46bb-ab8e-0b5c52d6f315]: IDLE"}}
+[debug] [2023-09-16T16:33:54.762Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-09-16T16:33:54.762Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-09-16T16:33:54.763Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-09-16T16:33:55.402Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2023-09-16T16:34:42.323Z] File C:\Users\judo2\Documents\dev\udemy\react_native\ZTM\MealsToGo\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\judo2\\Documents\\dev\\udemy\\react_native\\ZTM\\MealsToGo\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-09-16T16:34:43.326Z] Validating nodejs source
+[debug] [2023-09-16T16:34:45.905Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-09-16T16:34:45.905Z] Building nodejs source
+[debug] [2023-09-16T16:34:45.905Z] Failed to find version of module node: reached end of search path C:\Users\judo2\Documents\dev\udemy\react_native\ZTM\MealsToGo\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-09-16T16:34:45.907Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-09-16T16:34:45.915Z] Found firebase-functions binary at 'C:\Users\judo2\Documents\dev\udemy\react_native\ZTM\MealsToGo\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-09-16T16:34:45.935Z] [work-queue] {"queuedWork":["/mealstogo-5be57/us-central1/helloWorld-2023-09-16T16:34:45.935Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-09-16T16:34:45.935Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/mealstogo-5be57/us-central1/helloWorld-2023-09-16T16:34:45.935Z"],"workRunningCount":1}
+[debug] [2023-09-16T16:34:45.935Z] Accepted request GET /mealstogo-5be57/us-central1/helloWorld --> us-central1-helloWorld
+[debug] [2023-09-16T16:34:45.938Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-09-16T16:34:45.938Z] [functions] Got req.url=/mealstogo-5be57/us-central1/helloWorld, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-5be57/us-central1/helloWorld, mapping to path=/"}}
+[debug] [2023-09-16T16:34:45.939Z] [worker-pool] submitRequest(triggerId=us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-helloWorld)"}}
+[info] i  functions: Beginning execution of "us-central1-helloWorld" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Beginning execution of \"us-central1-helloWorld\""}}
+[debug] [2023-09-16T16:34:45.939Z] [worker-us-central1-helloWorld-e906b617-3d9b-46bb-ab8e-0b5c52d6f315]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-e906b617-3d9b-46bb-ab8e-0b5c52d6f315]: BUSY"}}
+[info] >  {"structuredData":true,"severity":"INFO","message":"Hello logs!"} {"user":{"structuredData":true,"severity":"INFO","message":"Hello logs!"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"structuredData\":true,\"severity\":\"INFO\",\"message\":\"Hello logs!\"}"}}
+[debug] [2023-09-16T16:34:45.946Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-helloWorld" in 6.9765ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finished \"us-central1-helloWorld\" in 6.9765ms"}}
+[debug] [2023-09-16T16:34:45.947Z] [worker-us-central1-helloWorld-e906b617-3d9b-46bb-ab8e-0b5c52d6f315]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-e906b617-3d9b-46bb-ab8e-0b5c52d6f315]: IDLE"}}
+[debug] [2023-09-16T16:34:45.948Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-09-16T16:34:45.948Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-09-16T16:34:45.948Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] Serving at port 8387
+
+[debug] [2023-09-16T16:34:47.217Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[debug] [2023-09-16T16:34:47.237Z] [worker-pool] Shutting down IDLE worker (us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-helloWorld)"}}
+[debug] [2023-09-16T16:34:47.237Z] [worker-us-central1-helloWorld-e906b617-3d9b-46bb-ab8e-0b5c52d6f315]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-e906b617-3d9b-46bb-ab8e-0b5c52d6f315]: FINISHING"}}
+[debug] [2023-09-16T16:34:47.252Z] [worker-us-central1-helloWorld-e906b617-3d9b-46bb-ab8e-0b5c52d6f315]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-e906b617-3d9b-46bb-ab8e-0b5c52d6f315]: exited"}}
+[debug] [2023-09-16T16:34:47.252Z] [worker-us-central1-helloWorld-e906b617-3d9b-46bb-ab8e-0b5c52d6f315]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-e906b617-3d9b-46bb-ab8e-0b5c52d6f315]: FINISHED"}}
+[debug] [2023-09-16T16:34:57.317Z] [work-queue] {"queuedWork":["/mealstogo-5be57/us-central1/helloWorld-2023-09-16T16:34:57.317Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-09-16T16:34:57.317Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/mealstogo-5be57/us-central1/helloWorld-2023-09-16T16:34:57.317Z"],"workRunningCount":1}
+[debug] [2023-09-16T16:34:57.317Z] Accepted request GET /mealstogo-5be57/us-central1/helloWorld --> us-central1-helloWorld
+[debug] [2023-09-16T16:34:57.321Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-09-16T16:34:57.322Z] [functions] Got req.url=/mealstogo-5be57/us-central1/helloWorld, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-5be57/us-central1/helloWorld, mapping to path=/"}}
+[debug] [2023-09-16T16:34:57.322Z] [worker-pool] Cleaned up workers for us-central1-helloWorld: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-helloWorld: 1 --> 0"}}
+[debug] [2023-09-16T16:34:57.988Z] [worker-pool] addWorker(us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-helloWorld)"}}
+[debug] [2023-09-16T16:34:57.988Z] [worker-pool] Adding worker with key us-central1-helloWorld, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-helloWorld, total=1"}}
+[debug] [2023-09-16T16:34:58.833Z] [runtime-status] [21520] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.10.1","resolution":"C:\\Users\\judo2\\Documents\\dev\\udemy\\react_native\\ZTM\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [21520] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"C:\\\\Users\\\\judo2\\\\Documents\\\\dev\\\\udemy\\\\react_native\\\\ZTM\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-09-16T16:34:58.834Z] [runtime-status] [21520] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\judo2\\Documents\\dev\\udemy\\react_native\\ZTM\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [21520] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\judo2\\\\Documents\\\\dev\\\\udemy\\\\react_native\\\\ZTM\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-09-16T16:34:58.835Z] [runtime-status] [21520] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [21520] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-09-16T16:34:58.836Z] [runtime-status] [21520] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\judo2\\Documents\\dev\\udemy\\react_native\\ZTM\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [21520] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\judo2\\\\Documents\\\\dev\\\\udemy\\\\react_native\\\\ZTM\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-09-16T16:34:59.004Z] [runtime-status] [21520] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [21520] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-09-16T16:34:59.004Z] [runtime-status] [21520] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\judo2\\Documents\\dev\\udemy\\react_native\\ZTM\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [21520] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\judo2\\\\Documents\\\\dev\\\\udemy\\\\react_native\\\\ZTM\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2023-09-16T16:34:59.005Z] [runtime-status] [21520] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\judo2\\Documents\\dev\\udemy\\react_native\\ZTM\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [21520] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\judo2\\\\Documents\\\\dev\\\\udemy\\\\react_native\\\\ZTM\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-09-16T16:34:59.006Z] [runtime-status] [21520] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.10.1","resolution":"C:\\Users\\judo2\\Documents\\dev\\udemy\\react_native\\ZTM\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [21520] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"C:\\\\Users\\\\judo2\\\\Documents\\\\dev\\\\udemy\\\\react_native\\\\ZTM\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-09-16T16:34:59.008Z] [runtime-status] [21520] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\judo2\\Documents\\dev\\udemy\\react_native\\ZTM\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [21520] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\judo2\\\\Documents\\\\dev\\\\udemy\\\\react_native\\\\ZTM\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-09-16T16:34:59.008Z] [runtime-status] [21520] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.10.1","resolution":"C:\\Users\\judo2\\Documents\\dev\\udemy\\react_native\\ZTM\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [21520] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"C:\\\\Users\\\\judo2\\\\Documents\\\\dev\\\\udemy\\\\react_native\\\\ZTM\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-09-16T16:34:59.021Z] [runtime-status] [21520] Functions runtime initialized. {"cwd":"C:\\Users\\judo2\\Documents\\dev\\udemy\\react_native\\ZTM\\MealsToGo\\functions","node_version":"18.17.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [21520] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\judo2\\\\Documents\\\\dev\\\\udemy\\\\react_native\\\\ZTM\\\\MealsToGo\\\\functions\",\"node_version\":\"18.17.0\"}"}}
+[debug] [2023-09-16T16:34:59.021Z] [runtime-status] [21520] Listening to port: \\?\pipe\fire_emu_0697dc595526b35a {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [21520] Listening to port: \\\\?\\pipe\\fire_emu_0697dc595526b35a"}}
+[debug] [2023-09-16T16:34:59.090Z] [worker-us-central1-helloWorld-0065c894-fd40-4d56-9b56-5332e030b215]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-0065c894-fd40-4d56-9b56-5332e030b215]: IDLE"}}
+[debug] [2023-09-16T16:34:59.091Z] [worker-pool] submitRequest(triggerId=us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-helloWorld)"}}
+[info] i  functions: Beginning execution of "us-central1-helloWorld" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Beginning execution of \"us-central1-helloWorld\""}}
+[debug] [2023-09-16T16:34:59.091Z] [worker-us-central1-helloWorld-0065c894-fd40-4d56-9b56-5332e030b215]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-0065c894-fd40-4d56-9b56-5332e030b215]: BUSY"}}
+[info] >  {"structuredData":true,"severity":"INFO","message":"Hello logs!"} {"user":{"structuredData":true,"severity":"INFO","message":"Hello logs!"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"structuredData\":true,\"severity\":\"INFO\",\"message\":\"Hello logs!\"}"}}
+[debug] [2023-09-16T16:34:59.097Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-helloWorld" in 5.7928ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finished \"us-central1-helloWorld\" in 5.7928ms"}}
+[debug] [2023-09-16T16:34:59.098Z] [worker-us-central1-helloWorld-0065c894-fd40-4d56-9b56-5332e030b215]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-0065c894-fd40-4d56-9b56-5332e030b215]: IDLE"}}
+[debug] [2023-09-16T16:34:59.098Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-09-16T16:34:59.098Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-09-16T16:34:59.098Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-09-16T16:35:12.725Z] File C:\Users\judo2\Documents\dev\udemy\react_native\ZTM\MealsToGo\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\judo2\\Documents\\dev\\udemy\\react_native\\ZTM\\MealsToGo\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-09-16T16:35:13.735Z] Validating nodejs source
+[debug] [2023-09-16T16:35:16.330Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-09-16T16:35:16.331Z] Building nodejs source
+[debug] [2023-09-16T16:35:16.331Z] Failed to find version of module node: reached end of search path C:\Users\judo2\Documents\dev\udemy\react_native\ZTM\MealsToGo\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-09-16T16:35:16.333Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-09-16T16:35:16.344Z] Found firebase-functions binary at 'C:\Users\judo2\Documents\dev\udemy\react_native\ZTM\MealsToGo\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8141
+
+[debug] [2023-09-16T16:35:17.519Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[debug] [2023-09-16T16:35:17.542Z] [worker-pool] Shutting down IDLE worker (us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-helloWorld)"}}
+[debug] [2023-09-16T16:35:17.543Z] [worker-us-central1-helloWorld-0065c894-fd40-4d56-9b56-5332e030b215]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-0065c894-fd40-4d56-9b56-5332e030b215]: FINISHING"}}
+[debug] [2023-09-16T16:35:17.554Z] [worker-us-central1-helloWorld-0065c894-fd40-4d56-9b56-5332e030b215]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-0065c894-fd40-4d56-9b56-5332e030b215]: exited"}}
+[debug] [2023-09-16T16:35:17.555Z] [worker-us-central1-helloWorld-0065c894-fd40-4d56-9b56-5332e030b215]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-0065c894-fd40-4d56-9b56-5332e030b215]: FINISHED"}}
