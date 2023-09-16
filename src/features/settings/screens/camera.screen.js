@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Camera } from "expo-camera";
 import styled from "styled-components/native";
-import { View } from "react-native";
+import { View, TouchableOpacity } from "react-native";
 import { Text } from "../../../components/typography/text.component";
 
 const ProfileCamera = styled(Camera)`
@@ -11,6 +11,13 @@ const ProfileCamera = styled(Camera)`
 export const CameraScreen = () => {
   const [hasPermission, setHasPermission] = useState(null);
   const cameraRef = useRef();
+
+  const snap = async () => {
+    if (cameraRef) {
+      const photo = await cameraRef.current.takePictureAsync();
+      console.log(photo);
+    }
+  };
 
   useEffect(() => {
     (async () => {
@@ -27,9 +34,11 @@ export const CameraScreen = () => {
     return <Text>No access to camera</Text>;
   }
   return (
-    <ProfileCamera
-      ref={(camera) => (cameraRef.current = camera)}
-      type={Camera.Constants.Type.front}
-    ></ProfileCamera>
+    <TouchableOpacity onPress={snap}>
+      <ProfileCamera
+        ref={(camera) => (cameraRef.current = camera)}
+        type={Camera.Constants.Type.front}
+      ></ProfileCamera>
+    </TouchableOpacity>
   );
 };
